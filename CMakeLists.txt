@@ -9,7 +9,7 @@ SET(FREQ "4000000")
 
 #============================================================================================
 
-SET(CMAKE_C_COMPILER avr-gcc) #fucking cmake caches, i can't create same working project, it's magically breaks
+SET(CMAKE_C_COMPILER avr-gcc)
 SET(CMAKE_CXX_COMPILER avr-g++)
 
 SET(CMAKE_C_FLAGS  "-Os -mmcu=${DEVICE} -DF_CPU=${FREQ}UL -std=gnu99 -Wl,--gc-sections")
