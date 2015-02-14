@@ -14,7 +14,7 @@
 #define PIN_OFF(port,pin) ((PORT ## port) &= ~_BV(P ## port ## pin))
 
 
-// Sets pin of port to 0
+// Sets pin of port to value
 //
 //  Example for PD2: PIN_SET(D, 2, 1)
 #define PIN_SET(port,pin,val) (val > 0 ? PIN_ON(port,pin) : PIN_OFF(port,pin))
