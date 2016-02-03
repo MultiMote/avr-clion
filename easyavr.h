@@ -21,13 +21,13 @@
 
 //  Sets all of port pins to OUTPUT mode
 //
-//  Example for PORTD: PORT_AS_OUTPUT(PORTD)
-#define PORT_AS_OUTPUT(port) ((port) = 0xFF)
+//  Example for PORTD: PORT_AS_OUTPUT(DDRD)
+#define PORT_AS_OUTPUT(ddr) ((ddr) = 0xFF)
 
 //  Sets all of port pins to INPUT mode
 //
-//  Example for PORTD: PORT_AS_INPUT(PORTD)
-#define PORT_AS_INPUT(port) ((port) = 0x00)
+//  Example for PORTD: PORT_AS_INPUT(DDRD)
+#define PORT_AS_INPUT(ddr) ((ddr) = 0x00)
 
 //  Sets pin of port to OUTPUT mode
 //
